@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"m3508test\startup_stm32f103xb.o"
+"m3508test\main.o"
+"m3508test\gpio.o"
+"m3508test\can.o"
+"m3508test\usart.o"
+"m3508test\stm32f1xx_it.o"
+"m3508test\stm32f1xx_hal_msp.o"
+"m3508test\stm32f1xx_hal_gpio_ex.o"
+"m3508test\stm32f1xx_hal_can.o"
+"m3508test\stm32f1xx_hal.o"
+"m3508test\stm32f1xx_hal_rcc.o"
+"m3508test\stm32f1xx_hal_rcc_ex.o"
+"m3508test\stm32f1xx_hal_gpio.o"
+"m3508test\stm32f1xx_hal_dma.o"
+"m3508test\stm32f1xx_hal_cortex.o"
+"m3508test\stm32f1xx_hal_pwr.o"
+"m3508test\stm32f1xx_hal_flash.o"
+"m3508test\stm32f1xx_hal_flash_ex.o"
+"m3508test\stm32f1xx_hal_exti.o"
+"m3508test\stm32f1xx_hal_tim.o"
+"m3508test\stm32f1xx_hal_tim_ex.o"
+"m3508test\stm32f1xx_hal_uart.o"
+"m3508test\system_stm32f1xx.o"
+--strict --scatter "M3508test\M3508test.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "M3508test.map" -o M3508test\M3508test.axf
